@@ -1,0 +1,35 @@
+name: Release skill package
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build package
+        run: |
+          VERSION="${GITHUB_REF_NAME}"
+          mkdir -p dist build/zhongxiang-di3ban-jiaocai
+          rsync -a --exclude ".git" --exclude ".github" \
+            --exclude "dist" --exclude "build" ./ build/zhongxiang-di3ban-jiaocai/
+          (cd build && zip -qr "../dist/zhongxiang-di3ban-jiaocai-${VERSION}.zip" zhongxiang-di3ban-jiaocai)
+          cp "dist/zhongxiang-di3ban-jiaocai-${VERSION}.zip" \
+             "dist/zhongxiang-di3ban-jiaocai-${VERSION}.skill"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: skill-packages
+          path: dist/*
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

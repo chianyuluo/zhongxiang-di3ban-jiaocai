@@ -1,6 +1,6 @@
 ---
 name: zhongxiang-di3ban-jiaocai
-description: "中项（系统集成项目管理工程师）第3版教程框架型备考知识库。覆盖信息化发展、新一代信息技术6大、ITSS与IT服务生命周期、信息系统架构、软件工程、数据工程、系统集成、信息安全工程、五大过程组(启动2/规划24/执行10/监控11/收尾1)、组织保障、监理、法律法规与职业道德。用于备考答疑、梳理框架、生成练习题与考点讲义、核对第3版术语与命题趋势。"
+description: "中项（系统集成项目管理工程师）第3版备考 Skill Pack：18章框架 + 11个教练。覆盖五大过程组48过程、十大领域ITTO、挣值/关键路径计算、案例找错、等保2.0、监理四控三管一协调、备考路线。当考生问'过程组几个/ITTO/挣值算不对/关键路径不一致/案例不知道找什么/监理怎么记'时使用；用于备考答疑、框架梳理、出题与第3版术语核对。"
 ---
 
 <!-- argument-hint: 五大过程组 / 变更流程 / WBS / 等保2.0 / ITSS / 生命周期模型 / 监理 / 招标 / 法律法规 / 案例找错 -->
@@ -15,6 +15,8 @@ description: "中项（系统集成项目管理工程师）第3版教程框架�
 - **带章号** — 说「ch11」，我加载该章文件
 - **浏览** — 问「有哪些章节」，看完整索引
 - **问考情/考纲/怎么复习** — 说「这章考什么」「怎么备考」，我读取 `kaogan_map.md` / `kaopin_frequency.md` / `exam_format.md` / `prep_strategy.md`
+- **找教练** — 说「过程组几个」「挣值算不对」「案例不知道找什么」「监理怎么记」「今天练什么」，我加载 `coaches/` 对应模块（不直接给答案，先追问）
+- **看技能地图** — 问「怎么用这套 skill」，我读取 `INDEX.md`
 
 > **考试导向提示**：中项**无论文**，成败在"综合 75 选择 + 案例 4 题（含 1 道 18–22 分计算）"。复习优先 🔴掌握章——**项目管理板块（第 9–16 章，过程组为核心）** + **IT 板块（第 4–8 章）**。各章末尾已附 📌考情/⚠️陷阱/🔢必背 三栏；计算题务必练熟 `calculation.md`。
 
@@ -54,6 +56,26 @@ description: "中项（系统集成项目管理工程师）第3版教程框架�
 - 稳→瀑布/V；模糊→原型；高风险→螺旋；快交付→敏捷/DevOps。
 
 ---
+
+## 教练系统（Coaches · 六段式 R/I/A1/A2/E/B）
+
+> 知识库回答"是什么"，教练回答"你卡在哪、怎么练"。默认**不直接给答案**，先用分层追问暴露空缺。
+
+| 触发 | 教练模块 |
+|---|---|
+| 错题 / 选了A答案是C | [01-mcq-diagnoser](coaches/01-mcq-diagnoser.md) |
+| 五大过程组各几个/过程归属 | [02-process-group-coach](coaches/02-process-group-coach.md) |
+| ITTO / 输入输出 | [03-itto-coach](coaches/03-itto-coach.md) |
+| CV/CPI/EAC 算不对 | [04-evm-step-debugger](coaches/04-evm-debugger.md) |
+| 关键路径/浮动算不对 | [05-cpm-reverse-checker](coaches/05-cpm-checker.md) |
+| 案例不知道从哪找问题 | [06-case-finding-coach](coaches/06-case-finding-coach.md) |
+| 等保几级/三重防护 | [07-security-coach](coaches/07-security-coach.md) |
+| 监理四控三管一协调 | [08-supervision-coach](coaches/08-supervision-coach.md) |
+| 每天1小时/还有X个月 | [09-study-route-planner](coaches/09-study-route-planner.md) |
+| 今天练什么 | [10-daily-drill-scheduler](coaches/10-daily-drill-scheduler.md) |
+| 总是同类错/错题怎么总结 | [11-mistake-attribution-log](coaches/11-mistake-attribution-log.md) |
+
+**编排原则**：问定义/框架 → 查 `chapters/`；问"我为什么错/怎么练" → 进教练。教练只做追问与纠错，不代写、不代算、不押题。
 
 ## Chapter Index
 
@@ -114,8 +136,26 @@ description: "中项（系统集成项目管理工程师）第3版教程框架�
 - [glossary.md](glossary.md) — 核心术语与定义（标注章号）
 - [patterns.md](patterns.md) — 案例找错反模式、过程组匹配、变更/选型套路
 
+**教练与成品**
+- [INDEX.md](INDEX.md) — 技能地图与触发速查
+- [coaches/](coaches/) — 11 个教练模块（六段式）
+- [examples/](examples/) — 3 个"输入→输出"示例
+- [CHANGELOG.md](CHANGELOG.md) — 版本更新记录
+- [LICENSE](LICENSE) — CC BY-NC-SA 4.0
+
 ---
+
+## 常见坑（Gotchas）
+
+1. **48 过程**：启动 2 / 规划 24 / 执行 10 / 监控 11 / 收尾 1。
+2. **管理质量在执行组，控制质量在监控组**；前者管过程，后者管结果。
+3. **三类绩效**：数据（原始）→ 信息（对比基准）→ 报告（汇总）。
+4. **典型/非典型**：没说"剩余按原计划"就是典型（EAC=BAC/CPI）。
+5. **中项无论文**，别按高级论文准备。
+6. **2026 年恢复一年两考（5 月、10 月）**，沿用第 3 版/2024 大纲。
+7. **监理**：四控（质量/进度/投资/变更）、三管（合同/信息/安全）、一协调。
+8. **等保 2.0**：5 级，一个中心+三重防护，三级以上每年测评。
 
 ## Scope & Limits
 
-覆盖中项第3版教程 18 章框架内容，面向 2027 备考（上下半年均开考）。不含高项/系规内容，不含实时考情公告（以软考办官方为准）。底层逐句原文见 `D:\WorkBuddy\Claw\05_临时文件\教材skill_source\中项\`。
+覆盖中项第3版教程 18 章框架 + 11 个教练，面向 2026 年两考备考（5 月、10 月）。不含高项/系规内容，不含实时考情公告（以软考办官方为准）。不代算整题、不押题。底层逐句原文见 `D:\WorkBuddy\Claw\05_临时文件\教材skill_source\中项\`。
