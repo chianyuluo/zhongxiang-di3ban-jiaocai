@@ -14,6 +14,9 @@ description: "中项（系统集成项目管理工程师）第3版教程框架�
 - **带主题** — 说「变更流程」「规划过程组」「等保2.0」「WBS」等，我定位并读取对应章节
 - **带章号** — 说「ch11」，我加载该章文件
 - **浏览** — 问「有哪些章节」，看完整索引
+- **问考情/考纲/怎么复习** — 说「这章考什么」「怎么备考」，我读取 `kaogan_map.md` / `kaopin_frequency.md` / `exam_format.md` / `prep_strategy.md`
+
+> **考试导向提示**：中项**无论文**，成败在"综合 75 选择 + 案例 4 题（含 1 道 18–22 分计算）"。复习优先 🔴掌握章——**项目管理板块（第 9–16 章，过程组为核心）** + **IT 板块（第 4–8 章）**。各章末尾已附 📌考情/⚠️陷阱/🔢必背 三栏；计算题务必练熟 `calculation.md`。
 
 > 注意：本 skill 是**框架/原则/技法/反模式层**，不是教材全文。需要逐句原文时，底层 clean 正文在 `D:\WorkBuddy\Claw\05_临时文件\教材skill_source\中项\`（18 章 markdown），本 skill 每条都标注了对应章号，可直接回查。
 
@@ -95,9 +98,21 @@ description: "中项（系统集成项目管理工程师）第3版教程框架�
 
 ## Supporting Files
 
+**考试导向（考纲/考频/备考）**
+- [exam_format.md](exam_format.md) — 考试科目、时长、范围、合格线、第3版变化、案例考法
+- [kaogan_map.md](kaogan_map.md) — 考纲考试目标/要求(8条) + 18 章逐章掌握度与考法映射
+- [kaopin_frequency.md](kaopin_frequency.md) — 板块权重、高频章 Top、案例/计算范围、过程组计数
+- [prep_strategy.md](prep_strategy.md) — 三阶段备考路线图与权重分配
+
+**硬货（数字/陷阱/计算/速记）**
+- [must_know.md](must_know.md) — 必背过程计数、公式、级别、组织矩阵、监理、单位进制
+- [zhenti_traps.md](zhenti_traps.md) — 高频易混对与案例命题陷阱
+- [calculation.md](calculation.md) — **计算专题**：关键路径/挣值/三点估算/进度压缩（案例必拿分）
+- [cheatsheet.md](cheatsheet.md) — 过程数、口诀、决策规则速查（含数字速记板块）
+
+**框架/术语**
 - [glossary.md](glossary.md) — 核心术语与定义（标注章号）
 - [patterns.md](patterns.md) — 案例找错反模式、过程组匹配、变更/选型套路
-- [cheatsheet.md](cheatsheet.md) — 过程数、口诀、决策规则速查
 
 ---
 
