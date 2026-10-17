@@ -101,4 +101,4 @@ examples/                 3 个"输入→输出"示例
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。当前版本 **v0.2.0**（2026-10-17）：新增 11 个教练、技能地图与示例。
+见 [CHANGELOG.md](CHANGELOG.md)。当前版本 **v0.2.1**（2026-10-17）：修正教练命名一致性、License 识别。

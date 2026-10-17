@@ -2,6 +2,12 @@
 
 遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.2.1] - 2026-10-17
+
+### 修正
+- `04-evm-debugger.md` → `04-evm-step-debugger.md`；`05-cpm-checker.md` → `05-cpm-reverse-checker.md`，与 frontmatter `name` 及文档引用一致。
+- `LICENSE` 换为 CC BY-NC-SA 4.0 官方全文（GitHub 可正确识别，原为 `NOASSERTION`）。
+
 ## [0.2.0] - 2026-10-17
 
 ### 新增

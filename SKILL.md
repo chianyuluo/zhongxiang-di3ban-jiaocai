@@ -66,8 +66,8 @@ description: "中项（系统集成项目管理工程师）第3版备考 Skill P
 | 错题 / 选了A答案是C | [01-mcq-diagnoser](coaches/01-mcq-diagnoser.md) |
 | 五大过程组各几个/过程归属 | [02-process-group-coach](coaches/02-process-group-coach.md) |
 | ITTO / 输入输出 | [03-itto-coach](coaches/03-itto-coach.md) |
-| CV/CPI/EAC 算不对 | [04-evm-step-debugger](coaches/04-evm-debugger.md) |
-| 关键路径/浮动算不对 | [05-cpm-reverse-checker](coaches/05-cpm-checker.md) |
+| CV/CPI/EAC 算不对 | [04-evm-step-debugger](coaches/04-evm-step-debugger.md) |
+| 关键路径/浮动算不对 | [05-cpm-reverse-checker](coaches/05-cpm-reverse-checker.md) |
 | 案例不知道从哪找问题 | [06-case-finding-coach](coaches/06-case-finding-coach.md) |
 | 等保几级/三重防护 | [07-security-coach](coaches/07-security-coach.md) |
 | 监理四控三管一协调 | [08-supervision-coach](coaches/08-supervision-coach.md) |
