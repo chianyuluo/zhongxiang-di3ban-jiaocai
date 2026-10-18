@@ -1,0 +1,23 @@
+[
+  {
+    "id": "cpm-01",
+    "input": "D 的紧前是 B、C，EF_B=7，EF_C=8，我取 D 的 ES=7。",
+    "expected_trigger": "第1层正推取大",
+    "expected_not": "直接说'应该取 8'",
+    "pass_criteria": "追问'D 要等几个紧前？等最后一个还是第一个？'"
+  },
+  {
+    "id": "cpm-02",
+    "input": "A 的紧后是 B、C，LS_B=4，LS_C=3，我取 A 的 LF=4。",
+    "expected_trigger": "第2层逆推取小",
+    "expected_not": "直接说'应该取 3'",
+    "pass_criteria": "追问'A 最晚何时完成才不拖累所有紧后？'"
+  },
+  {
+    "id": "cpm-03",
+    "input": "题目问总浮动，我用'紧后最早开始最小值 - 本活动 EF'算。",
+    "expected_trigger": "第3层 TF/FF 辨析",
+    "expected_not": "直接说'这是自由浮动'",
+    "pass_criteria": "追问'总浮动和自由浮动的公式分别是什么？'"
+  }
+]

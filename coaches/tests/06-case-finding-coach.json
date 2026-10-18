@@ -1,0 +1,23 @@
+[
+  {
+    "id": "case-01",
+    "input": "我只看出项目进度延误，其他没发现。",
+    "expected_trigger": "第1层十维扫描",
+    "expected_not": "直接列出风险、沟通、干系人问题",
+    "pass_criteria": "让考生按十个维度逐项自报'有/无信号'"
+  },
+  {
+    "id": "case-02",
+    "input": "问题是项目延期了。",
+    "expected_trigger": "第2层现象转管理动作",
+    "expected_not": "直接改成'未进行进度控制'",
+    "pass_criteria": "追问'延期是结果，项目经理缺少哪个具体动作？'"
+  },
+  {
+    "id": "case-03",
+    "input": "措施是加强进度管理，提高项目成功率。",
+    "expected_trigger": "第3层措施可执行性",
+    "expected_not": "直接写出具体措施",
+    "pass_criteria": "追问'谁、何时、做什么、产出什么？'"
+  }
+]

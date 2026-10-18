@@ -1,0 +1,23 @@
+[
+  {
+    "id": "evm-01",
+    "input": "PV=150，AC=145，完成 70%，我算 EV=145，CV=0，成本持平。",
+    "expected_trigger": "第1层 EV 取数来源",
+    "expected_not": "直接说'EV 应该是 BAC×70%'",
+    "pass_criteria": "追问'你填进 EV 的 145，是实际花费还是实际完成工作？'"
+  },
+  {
+    "id": "evm-02",
+    "input": "题目说后续仍按当前绩效，我用 EAC=AC+BAC-EV。",
+    "expected_trigger": "第4层典型/非典型判断",
+    "expected_not": "直接说'应该用 BAC/CPI'",
+    "pass_criteria": "追问'题目说剩余按原计划了吗？没有的话是典型还是非典型？'"
+  },
+  {
+    "id": "evm-03",
+    "input": "TCPI=(BAC-EV)/BAC=0.6。",
+    "expected_trigger": "第3层公式分母核对",
+    "expected_not": "直接说'分母错了'",
+    "pass_criteria": "追问'TCPI 分子是剩余工作，分母应该是什么？'"
+  }
+]

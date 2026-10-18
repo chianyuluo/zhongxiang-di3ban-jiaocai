@@ -52,6 +52,7 @@ npx skills add chianyuluo/zhongxiang-di3ban-jiaocai
 SKILL.md                  主入口（框架 + 路由 + 常见坑）
 INDEX.md                  技能地图与触发速查
 coaches/                  11 个教练（六段式 R/I/A1/A2/E/B）
+coaches/tests/            4 个核心教练的压力测试用例
 chapters/ch01~ch18.md     18 章知识框架
 cheatsheet.md / glossary.md / patterns.md / calculation.md
 kaogan_map.md / kaopin_frequency.md / must_know.md / zhenti_traps.md / prep_strategy.md / exam_format.md
@@ -101,4 +102,4 @@ examples/                 3 个"输入→输出"示例
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)。当前版本 **v0.2.1**（2026-10-17）：修正教练命名一致性、License 识别。
+见 [CHANGELOG.md](CHANGELOG.md)。当前版本 **v0.2.2**（2026-10-18）：新增核心教练测试用例。

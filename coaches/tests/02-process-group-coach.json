@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pg-01",
+    "input": "监控过程组我总记不住有几个。",
+    "expected_trigger": "第1层总数推导",
+    "expected_not": "直接说'11 个'",
+    "pass_criteria": "引导'总数 48，启动 2、收尾 1、执行 10、规划 24，剩下是多少'"
+  },
+  {
+    "id": "pg-02",
+    "input": "管理质量属于监控过程组吧？",
+    "expected_trigger": "第2层过程归属",
+    "expected_not": "直接说'在执行组'",
+    "pass_criteria": "追问'管理质量管过程还是结果？控制质量在哪个组？'"
+  },
+  {
+    "id": "pg-03",
+    "input": "规划过程组大概有 20 个过程。",
+    "expected_trigger": "第1层计数纠错",
+    "expected_not": "直接说'24 个'",
+    "pass_criteria": "让考生用五个组相加验证是否等于 48"
+  }
+]
